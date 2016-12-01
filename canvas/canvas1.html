@@ -17,8 +17,12 @@
 			var oC = document.getElementById('c1');
 			var oGc = oC.getContext('2d');  //绘制2d环境
 
+			oGc.fillStyle = 'red';
+			oGc.strokeStyle = 'blue';
+			oGc.lineWidth = 10;
 			oGc.fillRect(50,50,100,100);
-			oGc.strokeRect(50.5,160.5,100,100);
+
+			oGc.strokeRect(50.5,50.5,100,100);
 		}
 	</script>
 </head>
