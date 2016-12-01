@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+	<style>
+		body{
+			background: #000;
+
+		}
+		#c1{
+			background: white;
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			var oC = document.getElementById('c1');
+			var oGc = oC.getContext('2d');  //绘制2d环境
+
+			oGc.fillRect(50,50,100,100);
+			oGc.strokeRect(50.5,160.5,100,100);
+		}
+	</script>
+</head>
+<body>
+	<canvas id="c1" width="400" height="400"></canvas> <!-- 默认高300px，宽150px -->
+</body>
+</html>
